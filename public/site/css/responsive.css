@@ -1,0 +1,346 @@
+@media(min-width: 1480px) {
+
+    .element ul li a {
+        font-size: 16px;
+    }
+    .element ul {
+        gap: 30px;
+    }
+
+    .img_nav_bar img {
+        height: 600px;
+        width: 500px;
+    }
+    .text_new_articles {
+        padding: 20px;
+    }
+
+    .img_new_articles {
+        height: 300px;
+        width: 100%;
+    }
+    .text_new_articles {
+        min-height: 192px;
+    }
+
+    .sub_text_new_articles p {
+        font-size: 18px;
+    }
+    p {
+        font-size: 18px;
+    }
+    .img_literature_index {
+        height: 300px;
+    }
+    .text_literature_index h2 {
+        font-size: 22px;
+        line-height: 35px;
+    }
+
+
+    .sub_links_tabs_videos h2 {
+        font-size: 21px;
+        line-height: 40px;
+    }
+    .sub_links_tabs_videos {
+        height: 150px;
+
+    }
+    .videos_index_iframe iframe {
+        width: 100%;
+        height: 468px;
+        border-radius: 20px;
+    }
+    .search_header {
+        width: 20%;
+    }
+    .text_literature_index h2 {
+    height: 105px;
+}
+
+
+}
+
+@media(max-width: 1200px) {
+    .element ul li a {
+        font-size: 12px;
+    }
+    .element ul {
+        gap: 15px;
+    }
+    .img_new_articles {
+        height: 190px;
+    }
+    .text_new_articles h2 {
+        font-size: 18px;
+    }
+    .sub_text_new_articles p {
+        font-size: 15px;
+    }
+    .btn_sub_new_articles a {
+        width: 100%;
+        padding: 13px 10px;
+    }
+    .img_new_articles {
+        height: 165px;
+    }
+}
+
+
+@media(max-width: 992px) {
+    section.nav_bar::after {
+        display: none;
+    }
+    .element {
+        display: none;
+    }
+    .search_header {
+        width: 25%;
+    }
+    .img_new_articles {
+        height: 235px;
+    }
+    .sub_new_articles {
+        margin: 10px 0;
+    }
+    .new_articles {
+        padding: 5px 0;
+
+    }
+    .input_newsletter,
+    .btn_newsletter {
+        margin: 5px 0;
+    }
+    .btn_newsletter .ctm-btn-1 {
+        width: 50%;
+        display: block;
+        margin: auto;
+    }
+    .element_footer ul li a {
+        font-size: 12px;
+    }
+    .logo {
+        width: 30%;
+    }
+    .element_footer ul li::after {
+        width: 20px;
+        background-size: contain;
+        height: 20px;
+        top: 5px;
+    }
+
+
+    .content {
+        position: absolute;
+        display: block;
+        top: 0;
+        z-index: 1;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+
+    }
+    .top_bar {
+        position: relative;
+    }
+    .search_header {
+        width: 25%;
+        margin-left: 50px;
+    }
+
+    .sub_literature_index {
+        margin: 10px 0px ;
+    }
+    .text_main_aboutus ul li {
+        margin: 10px 0;
+        position: relative;
+        font-size: 16px;
+    }
+
+    .sub_aboutus {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px 0;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .aboutus {
+        margin-top: 40px;
+    }
+    .img_detalis_books img {
+        object-fit: contain;
+    }
+    .bread_crump_pages p a {
+        color: #162484;
+        font-size: 15px;
+    }
+    .bread_crump_pages p {
+
+        font-size: 11px;
+    }
+    .text_detalis_books h2 {
+        margin: 10px 0px;
+        font-size: 18px;
+    }
+    .text_detalis_books ul li {
+        margin: 10px 0;
+        font-size: 15px;
+    }
+
+    .download_pdf, .reading_books {
+        width: 100%;
+    }
+    .btn_download_books {
+        flex-wrap: wrap;
+    }
+
+
+
+}
+
+
+@media(max-width: 768px) {
+    .text_nav_bar {
+        text-align: center;
+    }
+    .links_tabs_videos ul li {
+        width: 100%;
+    }
+    .videos_index {
+        padding: 5px 0;
+        background-image: url('../images/bg1.png');
+    }
+
+    .element_footer ul {
+        flex-wrap: wrap;
+        justify-content: start;
+        gap: 10px;
+        width: 90%;
+    }
+    .element_footer ul li {
+        position: relative;
+        display: block;
+        width: 100%;
+        padding-right: 30px;
+    }
+
+    .element_footer ul li::after {
+        left: auto;
+        right: 0;
+    }
+    .search_header {
+        width: 30%;
+        margin-left: 50px;
+    }
+    .element_footer ul li:last-of-type::after {
+        display: block;
+    }
+    .end_page {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .end_page a {
+        text-align: center;
+        width: 100%;
+        margin: 10px 0;
+
+    }
+    .end_page p {
+        width: 100%;
+
+    }
+    .search_header {
+        display: none;
+    }
+    .logo {
+        width: 50%;
+    }
+    .detalis_books {
+        margin-top: 90px;
+    }
+    .text_detalis_books h2 {
+        margin: 10px 0px;
+        font-size: 16px;
+    }
+    .articles_page, .articles_detalis {
+        margin: 100px 0 50px;
+    }
+    .img_articles_detalis {
+        height: 230px;
+    }
+    .date_articles_detalis ul li {
+        font-size: 14px;
+    }
+    .text_articles_detalis {
+        font-family: "font_medium";
+        font-size: 13px;
+    }
+    .title2 h2::after {
+        right: -29px;
+    }
+}
+
+
+@media(max-width: 576px) {
+    .logo {
+        width: 57%;
+    }
+    .img_nav_bar img {
+        height: 370px;
+        width: 80%;
+        object-fit: cover;
+        user-select: none;
+    }
+    .title h2, .title2 h2 {
+        font-size: 15px;
+    }
+    section.nav_bar {
+        padding-top: 100px;
+    }
+    .text_nav_bar h1 {
+        font-size: 27px;
+        padding: 0px 0px 20px;
+    }
+    .text_nav_bar h2 {
+        font-size: 22px;
+        margin: 10px 0 10px;
+    }
+    .text_nav_bar p {
+        margin: 20px 0;
+        font-size: 13px;
+        line-height: 28px;
+    }
+    .date_articles_detalis ul {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: right;
+    }
+    .img_articles_detalis {
+        height: 132px;
+    }
+    .links_videos_page {
+        margin-bottom: 50px;
+    }
+    .contactus_page p {
+        width: 100%;
+    }
+    .contactus_page {
+        margin: 100px 0;
+    }
+    .img_contactus_page {
+        margin: 20px 0px;
+        text-align: center;
+    }
+
+    .btn_contactus_page {
+        text-align: center;
+    }
+
+
+}
+
+
+@media(max-width: 450px) {}

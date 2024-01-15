@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use App\Http\Resources\Api\CategoryProjectShowResource;
 use App\Http\Resources\Api\CategoryResource;
+use App\Http\Resources\Api\CategoryShowResource;
+use App\Http\Resources\Api\ProjectsShowResource;
 use App\Models\Category;
 use App\Repositories\Sql\CategoryRepository;
 use Illuminate\Http\Request;
@@ -38,6 +40,6 @@ class CategoryProjectController extends Controller
         if (!$category){
             return response()->apiError('not found',404);
         }
-        return response()->api(new CategoryResource($category),'success',200);
+        return response()->api(new CategoryShowResource($category),'success',200);
     }
 }

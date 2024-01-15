@@ -10,13 +10,8 @@ class SettingController extends Controller
 {
     public function index($key)
     {
-        if (!in_array($key, ['about-us', 'connect-us', 'chat','about-app']))
-            return response()->apiError('not found',404);
-
-        $lang = request()->header('lang');
-        if (!$lang)
-            $lang = 'ar';
         $data = [];
+        $lang = app()->getLocale();
         switch ($key) {
             case 'about-us':
                $data['about'] = getSetting('about',$lang)->value;
@@ -36,6 +31,9 @@ class SettingController extends Controller
             case 'about-app':
                 $data['about_app'] = getSetting('about_app',$lang)->value;
                 break;
+                default:
+                return response()->apiError('not found', 404);
+
 
 
         }

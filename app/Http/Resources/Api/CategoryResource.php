@@ -14,13 +14,7 @@ class CategoryResource extends JsonResource
      */
     public function toArray($request)
     {
-        if (request()->route()->getName() == 'api.show.category'){
-            return [
-                'id'=> $this->id,
-                'name'=> $this->name,
-                'projects'=> ProjectResource::collection($this->whenLoaded('projects')->paginate(10))
-            ];
-        }
+
             return [
                 'id' => $this->id,
                 'name' => $this->name,

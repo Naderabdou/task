@@ -17,16 +17,38 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
-Route::name('api.')->middleware('lang')->group(function () {
-    Route::get('dashboard', 'dashboardController@index')->name('dashboard');
-    Route::get('category/project', 'categoryProjectController@index');
-    Route::get('category/{id}/projects', 'categoryProjectController@show')->name('show.category');
-    Route::get('project/{id}/show', 'ProjectController@show');
-    Route::get('category/services', 'servicesCategoryController@index')->name('category.services');
-    Route::get('services/{id}/show', 'servicesController@show')->name('show.services');
-    Route::get('setting/{key}', 'settingController@index')->name('setting');
+Route::middleware('Localization')->group(function () {
+
+            /// route for dashboard ///
+    Route::get('dashboard', 'dashboardController@index');
+            // end of dashboard route ///
+
+         /// route for category Project ///
+    Route::get('category-project', 'categoryProjectController@index');
+    Route::get('category-projects/{id}', 'categoryProjectController@show');
+        // end of category Project route ///
+
+            /// route for project ///
+    Route::get('project/show/{id}', 'ProjectController@show');
+          // end of project route ///
+
+          /// route for category services ///
+    Route::get('category-services', 'servicesCategoryController@index');
+    Route::get('category-services/{id}', 'servicesCategoryController@show');
+          // end of category services route ///
+
+              /// route for services ///
+    Route::get('services/show/{id}', 'servicesController@show');
+             // end of services route ///
+
+            /// route for setting ///
+    Route::get('setting/{key}', 'settingController@index');
+             // end of setting route ///
+
+              /// route for blog ///
     Route::get('blog', 'blogController@index');
-    Route::get('blog/{id}/show', 'blogController@show');
-    //Route::get('lang', 'dashboardController@lang')->name('lang');
+    Route::get('blog/show/{id}', 'blogController@show');
+            // end of blog route ///
+
 });
 

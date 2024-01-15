@@ -94,6 +94,10 @@ return [
     */
 
     'fallback_locale' => 'ar',
+    'supported_languages' => [
+        'ar' => 'Arabic',
+        'en' => 'English',
+    ],
 
     /*
     |--------------------------------------------------------------------------

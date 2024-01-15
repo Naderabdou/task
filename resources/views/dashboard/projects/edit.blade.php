@@ -61,7 +61,7 @@
                                                     <select class="form-control select2" id="select-country" name="category_id">
                                                         <option value="">اختر قسم </option>
                                                         @foreach ($categories as $category)
-                                                            <option value="{{ $category->id }}" {{$category->id == $project->id ? 'selected' : ''}}>{{ app()->getLocale() == 'ar' ?  $category->name_ar  : $category->name_en}}</option>
+                                                            <option value="{{ $category->id }}" {{$category->id == $project->category_id ? 'selected' : ''}}>{{ app()->getLocale() == 'ar' ?  $category->name_ar  : $category->name_en}}</option>
                                                         @endforeach
                                                     </select>
                                                 </div>

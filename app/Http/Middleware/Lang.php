@@ -17,7 +17,7 @@ class Lang
      */
     public function handle(Request $request, Closure $next)
     {
-        $lang = $request->header('lang');
+        $lang = $request->header('Accept-language');
         if($lang)
         {
             app()->setLocale($lang);

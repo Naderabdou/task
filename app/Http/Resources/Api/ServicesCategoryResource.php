@@ -17,7 +17,7 @@ class ServicesCategoryResource extends JsonResource
         return [
             'id'=> $this->id,
             'name'=> $this->name,
-            'services'=> ServicesResource::collection($this->whenLoaded('services')->paginate(10))
+           // 'services'=> ServicesResource::collection($this->whenLoaded('services')->paginate(10))
         ];
     }
 }
